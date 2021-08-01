@@ -1,17 +1,18 @@
-# Hello assembly
+# Learning assembly for macOS
+
+1. Hello world
+2. `syscall` (continued)
+3. `equ`
+4. `inc` and labels
+5. `jmp` and `cmp`
+
+Run with
 
 ```bash
-nasm -f macho64 64.asm
-
-ld -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib \
-  -lSystem \
-  -macosx_version_min 10.12 \
-  -no_pie \
-  -o hello \
-  hello.o
-
-./hello
+./run.sh 02-syscall
 ```
+
+Others:
 
 Registers for syscall arguments: rdi, rsi, rdx, rcx, r8, r9
 https://en.wikipedia.org/wiki/X86_calling_conventions#x86-64_Calling_Conventions
