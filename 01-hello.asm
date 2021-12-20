@@ -17,4 +17,4 @@ _main:
 
     section   .data
 message:  
-    db      "Hello, World", 0       ; 10 represents the newline at the end
+    db      "Hello, World", 0       ; 0 represents the newline at the end
